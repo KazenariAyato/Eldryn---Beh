@@ -1,0 +1,74 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cb:webshooter",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.tools"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "Webshooter"
+      },
+      "minecraft:stacked_by_data": true,
+      "minecraft:cooldown": {
+        "category": "cb:webshooter_cooldown",
+        "duration": 2.5
+      },
+      "minecraft:allow_off_hand": false,
+      "minecraft:hand_equipped": true,
+      "minecraft:use_animation": "bow",
+      "minecraft:use_duration": 999999.0,
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "cb_webshooter",
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "scale": [
+              0.0015625,
+              0.0015625,
+              0.0015625
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.0005937499999996438,
+              0.0005937499999996438,
+              0.0005937499999996438
+            ]
+          }
+        },
+        "off_hand": {
+          "third_person": {
+            "scale": [
+              0.0015625,
+              0.0015625,
+              0.0015625
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.0005937499999996438,
+              0.0005937499999996438,
+              0.0005937499999996438
+            ]
+          }
+        }
+      },
+      "minecraft:projectile": {
+        "projectile_entity": "cb:webshooter_bullet"
+      },
+      "minecraft:throwable": {
+        "do_swing_animation": false,
+        "scale_power_by_draw_duration": false,
+        "min_draw_duration": 0.0,
+        "max_draw_duration": 0.0
+      },
+      "minecraft:custom_components": [
+        "cb_webshooter:trigger"
+      ]
+    }
+  }
+}

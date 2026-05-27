@@ -1,0 +1,91 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cb:vampiric_greatsword",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
+    },
+    "components": {
+      "minecraft:icon": "cb_vampiric_greatsword",
+      "minecraft:max_stack_size": 1,
+      "minecraft:stacked_by_data": true,
+      "minecraft:glint": false,
+      "minecraft:hand_equipped": true,
+      "minecraft:damage": 15,
+      "minecraft:enchantable": {
+        "slot": "sword",
+        "value": 10
+      },
+      "minecraft:durability": {
+        "max_durability": 2041
+      },
+      "minecraft:mining_speed": 1,
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "scale": [
+              0.05,
+              0.05,
+              0.05
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.018999999999988602,
+              0.018999999999988602,
+              0.018999999999988602
+            ]
+          }
+        },
+        "off_hand": {
+          "third_person": {
+            "scale": [
+              0.05,
+              0.05,
+              0.05
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.018999999999988602,
+              0.018999999999988602,
+              0.018999999999988602
+            ]
+          }
+        }
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": [
+              "cb:vampire_blood"
+            ],
+            "repair_amount": 500
+          },
+          {
+            "items": [
+              "cb:vampiric_greatsword"
+            ],
+            "repair_amount": "context.other->query.remaining_durability + 0.2 * context.other->query.max_durability"
+          }
+        ]
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:display_name": {
+        "value": "Vampiric Greatsword "
+      },
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_sword"
+        ]
+      },
+      "minecraft:allow_off_hand": true,
+      "minecraft:custom_components": [
+        "cb_vampiric_greatsword:trigger"
+      ]
+    }
+  }
+}

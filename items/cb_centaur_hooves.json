@@ -2,7 +2,7 @@
   "format_version": "1.21.10",
   "minecraft:item": {
     "description": {
-      "identifier": "cb:minotaur_horn",
+      "identifier": "cb:centaur_hooves",
       "menu_category": {
         "category": "nature"
       }
@@ -16,17 +16,17 @@
         "use_duration": 0
       },
       "minecraft:allow_off_hand": true,
-      "minecraft:icon": "cb:minotaur_horn",
+      "minecraft:icon": "cb:centaur_hooves",
       "minecraft:display_name": {
-        "value": "Minotaur Horn"
+        "value": "Centaur Hooves"
       },
       "minecraft:tags": {
         "tags": [
-          "minecraft:is_meat"
+          "minecraft:transform_materials"
         ]
       },
       "minecraft:custom_components": [
-        "cb_minotaur_horn:trigger"
+        "cb_centaur_hooves:trigger"
       ]
     }
   }

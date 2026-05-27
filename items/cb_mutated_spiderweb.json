@@ -2,7 +2,7 @@
   "format_version": "1.21.10",
   "minecraft:item": {
     "description": {
-      "identifier": "cb:minotaur_horn",
+      "identifier": "cb:mutated_spiderweb",
       "menu_category": {
         "category": "nature"
       }
@@ -16,17 +16,17 @@
         "use_duration": 0
       },
       "minecraft:allow_off_hand": true,
-      "minecraft:icon": "cb:minotaur_horn",
+      "minecraft:icon": "cb:mutated_spiderweb",
       "minecraft:display_name": {
-        "value": "Minotaur Horn"
+        "value": "Mutated Spider Web "
       },
       "minecraft:tags": {
         "tags": [
-          "minecraft:is_meat"
+          "minecraft:stone_tier"
         ]
       },
       "minecraft:custom_components": [
-        "cb_minotaur_horn:trigger"
+        "cb_mutated_spiderweb:trigger"
       ]
     }
   }

@@ -1,0 +1,69 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cb:cooked_minotaur_meat",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:hand_equipped": true,
+      "minecraft:max_stack_size": 64,
+      "minecraft:glint": false,
+      "minecraft:food": {
+        "saturation_modifier": 57.6,
+        "nutrition": 36,
+        "can_always_eat": false
+      },
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.35
+      },
+      "minecraft:custom_components": [
+        "cb_cooked_minotaur_meat:trigger"
+      ],
+      "minecraft:cooldown": {
+        "category": "cooked_minotaur_meat_cooldown",
+        "duration": 0.75
+      },
+      "minecraft:allow_off_hand": true,
+      "minecraft:use_animation": "eat",
+      "minecraft:icon": "cb:cooked_minotaur_meat",
+      "minecraft:render_offsets": {
+        "main_hand": {
+          "third_person": {
+            "scale": [
+              0.1,
+              0.1,
+              0.1
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.037999999999977205,
+              0.037999999999977205,
+              0.037999999999977205
+            ]
+          }
+        },
+        "off_hand": {
+          "third_person": {
+            "scale": [
+              0.1,
+              0.1,
+              0.1
+            ]
+          },
+          "first_person": {
+            "scale": [
+              0.037999999999977205,
+              0.037999999999977205,
+              0.037999999999977205
+            ]
+          }
+        }
+      }
+    }
+  }
+}
