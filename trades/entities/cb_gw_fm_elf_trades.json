@@ -1,0 +1,518 @@
+{
+  "tiers": [
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 42
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:diamond_chestplate",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    },
+                    {
+                      "function": "specific_enchants",
+                      "enchants": [
+                        {
+                          "id": "protection",
+                          "level": "2"
+                        },
+                        {
+                          "id": "unbreaking",
+                          "level": "2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    },
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 38
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:diamond_leggings",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    },
+                    {
+                      "function": "specific_enchants",
+                      "enchants": [
+                        {
+                          "id": "unbreaking",
+                          "level": "2"
+                        },
+                        {
+                          "id": "fire_protection",
+                          "level": "2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    },
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 37
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:diamond_helmet",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    },
+                    {
+                      "function": "specific_enchants",
+                      "enchants": [
+                        {
+                          "id": "unbreaking",
+                          "level": "4"
+                        },
+                        {
+                          "id": "projectile_protection",
+                          "level": "2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    },
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald_block",
+                  "quantity": 4,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:diamond_boots",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    },
+                    {
+                      "function": "specific_enchants",
+                      "enchants": [
+                        {
+                          "id": "unbreaking",
+                          "level": "2"
+                        },
+                        {
+                          "id": "thorns",
+                          "level": "1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    },
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:iron_block",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 6,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    },
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:gold_block",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 5,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    },
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 25
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:iron_chestplate",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    },
+                    {
+                      "function": "specific_enchants",
+                      "enchants": [
+                        {
+                          "id": "unbreaking",
+                          "level": "2"
+                        },
+                        {
+                          "id": "projectile_protection",
+                          "level": "2"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    },
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 22
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:iron_leggings",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    },
+                    {
+                      "function": "specific_enchants",
+                      "enchants": [
+                        {
+                          "id": "fire_protection",
+                          "level": "2"
+                        },
+                        {
+                          "id": "thorns",
+                          "level": "1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    },
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 18
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:iron_helmet",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    },
+                    {
+                      "function": "specific_enchants",
+                      "enchants": [
+                        {
+                          "id": "aqua_affinity",
+                          "level": "2"
+                        },
+                        {
+                          "id": "mending",
+                          "level": "1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    },
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 17
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:iron_boots",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": {
+                        "min": 0,
+                        "max": 0
+                      }
+                    },
+                    {
+                      "function": "specific_enchants",
+                      "enchants": [
+                        {
+                          "id": "frost_walker",
+                          "level": "1"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    },
+    {
+      "total_exp_required": 0,
+      "groups": [
+        {
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "minecraft:emerald",
+                  "quantity": 25
+                }
+              ],
+              "gives": [
+                {
+                  "item": "cb:chestplate_of_heavens",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 1,
+              "max_uses": 10,
+              "reward_exp": true
+            }
+          ],
+          "num_to_select": 0
+        }
+      ]
+    }
+  ]
+}
