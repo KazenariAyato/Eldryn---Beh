@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kraken_scales_boots_2bac1037"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:kraken_scales",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:kraken_scales_boots",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cb:gold_katana"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "  I",
+      " I ",
+      "S  "
+    ],
+    "key": {
+      "I": { "item": "minecraft:gold_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "cb:gold_katana",
+      "count": 1
+    }
+  }
+}

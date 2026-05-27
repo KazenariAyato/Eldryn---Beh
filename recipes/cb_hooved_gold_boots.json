@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hooved_gold_boots_0958b12e"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:golden_boots",
+        "data": 0
+      },
+      "C": {
+        "item": "cb:centaur_hooves",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:hooved_gold_boots",
+      "count": 1
+    }
+  }
+}

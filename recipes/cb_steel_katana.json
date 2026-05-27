@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cb:steel_katana"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "  I",
+      " I ",
+      "S  "
+    ],
+    "key": {
+      "I": { "item": "cb:steel_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "cb:steel_katana",
+      "count": 1
+    }
+  }
+}

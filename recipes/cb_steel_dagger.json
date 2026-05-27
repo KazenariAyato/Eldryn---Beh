@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cb:steel_dagger_recipe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+  " I",
+  " S"
+],
+    "key": {
+      "I": { "item": "cb:steel_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "cb:steel_dagger",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "cb:steel_ingot"
+      }
+    ]
+  }
+}

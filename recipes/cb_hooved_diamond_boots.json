@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hooved_diamond_boots_50d7ee2e"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:diamond_boots",
+        "data": 0
+      },
+      "C": {
+        "item": "cb:centaur_hooves",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:hooved_diamond_boots",
+      "count": 1
+    }
+  }
+}

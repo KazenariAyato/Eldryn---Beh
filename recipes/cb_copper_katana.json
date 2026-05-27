@@ -1,0 +1,22 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cb:copper_katana"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "  I",
+      " I ",
+      "S  "
+    ],
+    "key": {
+      "I": { "item": "minecraft:copper_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "cb:copper_katana",
+      "count": 1
+    }
+  }
+}

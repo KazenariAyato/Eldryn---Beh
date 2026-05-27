@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "iron_hooved_boots_b2559da6"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:iron_boots",
+        "data": 0
+      },
+      "C": {
+        "item": "cb:centaur_hooves",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:iron_hooved_boots",
+      "count": 1
+    }
+  }
+}

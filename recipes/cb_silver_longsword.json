@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cb:silver_longsword_recipe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      " I ",
+      " I ",
+      "ISI"
+    ],
+    "key": {
+      "I": {
+        "item": "cb:silver_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "cb:silver_longsword",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "cb:silver_ingot"
+      }
+    ]
+  }
+}

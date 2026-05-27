@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kraken_scale_chestplate_35dc2564"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:kraken_scales",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:kraken_scale_chestplate",
+      "count": 1
+    }
+  }
+}

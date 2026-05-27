@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "labrysium_boots"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:labrysium_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:labrysium_boots",
+      "count": 1
+    }
+  }
+}

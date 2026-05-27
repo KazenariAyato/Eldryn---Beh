@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "iron_spiked_bat_3924ad0e"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "  A",
+      " B ",
+      "A  "
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:iron_nugget",
+        "data": 0
+      },
+      "B": {
+        "item": "cb:wooden_bat",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:iron_spiked_bat",
+      "count": 1
+    }
+  }
+}

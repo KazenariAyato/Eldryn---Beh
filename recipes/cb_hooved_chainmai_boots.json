@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hooved_chainmai_boots_21501394"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:chainmail_boots",
+        "data": 0
+      },
+      "C": {
+        "item": "cb:centaur_hooves",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:hooved_chainmai_boots",
+      "count": 1
+    }
+  }
+}

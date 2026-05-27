@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kitsune_claws_d523f0de"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "BCB"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:iron_ingot",
+        "data": 0
+      },
+      "B": {
+        "item": "cb:kitsune_fur",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:leather",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:kitsune_claws",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "webshooter_12661beb"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "III",
+      "WBW",
+      "WBW"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "W": {
+        "item": "cb:mutated_spiderweb"
+      },
+      "B": {
+        "item": "minecraft:black_wool"
+      }
+    },
+    "result": {
+      "item": "cb:webshooter",
+      "count": 1
+    }
+  }
+}

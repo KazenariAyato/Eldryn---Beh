@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cb:netherite_longsword_recipe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      " I ",
+      " I ",
+      "ISI"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:netherite_scrap"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "cb:netherite_longsword",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:netherite_ingot"
+      }
+    ]
+  }
+}

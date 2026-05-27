@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kitsune_tails_62c8d1fc"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "ABA",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:kitsune_fur",
+        "data": 0
+      },
+      "B": {
+        "item": "cb:crimson_viole",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:kitsune_tails",
+      "count": 1
+    }
+  }
+}

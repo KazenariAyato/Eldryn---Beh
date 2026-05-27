@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "labrysium_helmet"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:labrysium_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:labrysium_helmet",
+      "count": 1
+    }
+  }
+}

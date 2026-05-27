@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "kraken_scale_helmet_d89bfcfa"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:kraken_scales",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:kraken_scale_helmet",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hooved_kraken_scales_boots_c21846b7"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "cb:kraken_scales_boots",
+        "data": 0
+      },
+      "C": {
+        "item": "cb:centaur_hooves",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:hooved_kraken_scales_boots",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "krakens_fang_d74abc94"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABC"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:iron_sword",
+        "data": 0
+      },
+      "B": {
+        "item": "cb:tentacle_sword",
+        "data": 0
+      },
+      "C": {
+        "item": "cb:kraken_poison_shooter",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:krakens_fang",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "adamantium_chestplate"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:adamantium_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:adamantium_chestplate",
+      "count": 1
+    }
+  }
+}

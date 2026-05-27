@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "silver_boots"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:silver_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:silver_boots",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "vampiric_greatsword_f498bef3"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "ABC"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:diamond_sword",
+        "data": 0
+      },
+      "B": {
+        "item": "cb:vampiric_viole",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:netherite_sword",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:vampiric_greatsword",
+      "count": 1
+    }
+  }
+}

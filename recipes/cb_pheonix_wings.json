@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "pheonix_wings_45ab37b1"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "ABA",
+      "A A"
+    ],
+    "key": {
+      "B": {
+        "item": "minecraft:diamond_chestplate",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:pheonix_wings",
+      "count": 1
+    }
+  }
+}

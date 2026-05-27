@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cb:netherite_dagger_recipe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+  " I",
+  " S"
+],
+    "key": {
+      "I": { "item": "minecraft:netherite_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "cb:netherite_dagger",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:netherite_ingot"
+      }
+    ]
+  }
+}

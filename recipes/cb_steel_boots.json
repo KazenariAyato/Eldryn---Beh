@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "steel_boots"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "A A",
+      "A A"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:steel_ingot",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:steel_boots",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cb:steel_ingot_recipe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "IS "
+    ],
+    "key": {
+      "I": { "item": "minecraft:iron_ingot" },
+      "S": { "item": "minecraft:cobblestone" }
+    },
+    "result": {
+      "item": "cb:steel_ingot",
+      "count": 2
+    },
+    "unlock": [
+      {
+        "item": "minecraft:iron_ingot"
+      }
+    ]
+  }
+}

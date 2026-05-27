@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cb:gold_longsword_recipe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      " I ",
+      " I ",
+      "ISI"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:gold_ingot"
+      },
+      "S": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "cb:gold_longsword",
+      "count": 1
+    },
+    "unlock": [
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ]
+  }
+}

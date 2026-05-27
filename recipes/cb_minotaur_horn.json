@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "minotaur_horn_eef2de8f"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "cb:raw_minotaur_meat",
+        "data": 0
+      },
+      "C": {
+        "item": "minecraft:goat_horn",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:minotaur_horn",
+      "count": 1
+    }
+  }
+}
