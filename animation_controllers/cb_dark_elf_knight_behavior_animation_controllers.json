@@ -1,0 +1,21 @@
+{
+  "format_version": "1.17.0",
+  "animation_controllers": {
+    "controller.animation.cb_dark_elf.server": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "transitions": [
+            { "attacking": "query.property('cb:is_attacking')" }
+          ]
+        },
+        "attacking": {
+          "animations": ["attack_knight"],
+          "transitions": [
+            { "idle": "!query.property('cb:is_attacking')" }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.cb_yeti_fur_helmet": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "walking": "(1.0)"
+            }
+          ],
+          "on_entry": [
+            "/function cb_yeti_fur_helmet"
+          ]
+        },
+        "walking": {
+          "transitions": [
+            {
+              "default": "query.get_equipped_item_name=='yeti_fur_helmet' && query.is_using_item"
+            }
+          ],
+          "on_entry": [
+            "/function cb_yeti_fur_helmet"
+          ]
+        }
+      }
+    }
+  }
+}
