@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.50",
+  "minecraft:item": {
+    "description": {
+      "identifier": "cb:labrysium_ingot",
+      "category": "Items"
+    },
+    "components": {
+      "minecraft:icon": "cb_labrysium_ingot",
+      "minecraft:max_stack_size": 64
+    }
+  }
+}
