@@ -1,0 +1,71 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cb:kraken_poison_shooter_bullet",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 5,
+            "knockback": true,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": true
+          },
+          "mob_effect": {
+            "effect": "poison",
+            "durationeasy": 5,
+            "durationnormal": 5,
+            "durationhard": 5,
+            "amplifier": 2
+          },
+          "stick_in_ground": {
+            "shake_time": 0.35
+          },
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "on:hit",
+              "target": "self"
+            }
+          }
+        },
+        "hit_sound": "bow.hit",
+        "power": 2,
+        "gravity": 0.01,
+        "inertia": 1,
+        "anchor": 2,
+        "angle_offset": 0,
+        "offset": [
+          0.0,
+          0.5,
+          0.0
+        ]
+      },
+      "minecraft:physics": {
+        "has_collision": true,
+        "has_gravity": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 100,
+          "max_dropped_ticks": 7,
+          "use_motion_prediction_hints": true
+        }
+      }
+    }
+  }
+}

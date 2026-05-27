@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:enchanted_book",
+          "functions": [
+            {
+              "function": "specific_enchants",
+              "enchants": [
+                { "id": "sharpness", "level": 4 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+

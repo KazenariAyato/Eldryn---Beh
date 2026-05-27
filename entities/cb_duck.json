@@ -1,0 +1,288 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cb:duck",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "cb:duck_baby": {
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.5
+        },
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            "minecraft:cod",
+            "minecraft:salmon",
+            "minecraft:tropical_fish",
+            "minecraft:pufferfish"
+          ],
+          "grow_up": {
+            "event": "cb:duck_grow_up",
+            "target": "self"
+          }
+        }
+      },
+      "cb:duck_adult": {
+        "minecraft:experience_reward": {
+          "on_death": "query.last_hit_by_player ? 9 : 0"
+        },
+        "minecraft:breedable": {
+          "require_tame": true,
+          "breed_items": [
+            "minecraft:cod",
+            "minecraft:salmon",
+            "minecraft:tropical_fish",
+            "minecraft:pufferfish"
+          ],
+          "breeds_with": {
+            "mate_type": "cb:duck",
+            "baby_type": "cb:duck",
+            "breed_event": {
+              "event": "cb:duck_birth",
+              "target": "self"
+            }
+          }
+        }
+      },
+      "cb:duck_tamed": {
+        "minecraft:is_tamed": {},
+        "minecraft:tameable": {
+          "probability": 0.33,
+          "tame_items": [
+            "minecraft:cod",
+            "minecraft:salmon",
+            "minecraft:tropical_fish",
+            "minecraft:pufferfish"
+          ],
+          "tame_event": {
+            "event": "cb:duck_on_tame",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 2,
+          "speed_multiplier": 1.1,
+          "start_distance": 10,
+          "stop_distance": 2
+        }
+      },
+      "cb:duck_untamed": {
+        "minecraft:tameable": {
+          "probability": 0.33,
+          "tame_items": [
+            "minecraft:cod",
+            "minecraft:salmon",
+            "minecraft:tropical_fish",
+            "minecraft:pufferfish"
+          ],
+          "tame_event": {
+            "event": "cb:duck_on_tame",
+            "target": "self"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["duck", "animal", "mob"]
+      },
+      "minecraft:health": {
+        "value": 10,
+        "max": 10
+      },
+"minecraft:scale": {
+  "value": 0.45
+},
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.8
+      },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_water": false,
+        "can_swim": true
+      },
+      "minecraft:can_swim": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/duck.json"
+      },
+      "minecraft:attack": {
+        "damage": 2
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 3
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 4,
+        "must_see": true,
+        "reselect_targets": false,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "rat"
+            },
+            "max_dist": 16
+          }
+        ]
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 5,
+        "hurt_owner": false,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "rat"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "player"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 4,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "mob"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "rat"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "duck"
+                }
+              ]
+            },
+            "max_dist": 8,
+            "walk_speed_multiplier": 1.4,
+            "sprint_speed_multiplier": 1.6
+          }
+        ]
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.random_swim": {
+        "priority": 7,
+        "speed_multiplier": 1.0,
+        "xz_dist": 8,
+        "y_dist": 0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6.0
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 3,
+        "speed_multiplier": 1.2,
+        "items": [
+          "minecraft:cod",
+          "minecraft:salmon",
+          "minecraft:tropical_fish",
+          "minecraft:pufferfish"
+        ]
+      },
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 1,
+            "add": {
+              "component_groups": ["cb:duck_baby"]
+            }
+          },
+          {
+            "weight": 4,
+            "add": {
+              "component_groups": ["cb:duck_adult", "cb:duck_untamed"]
+            }
+          }
+        ]
+      },
+      "cb:duck_birth": {
+        "add": {
+          "component_groups": ["cb:duck_baby"]
+        }
+      },
+      "cb:duck_grow_up": {
+        "remove": {
+          "component_groups": ["cb:duck_baby"]
+        },
+        "add": {
+          "component_groups": ["cb:duck_adult", "cb:duck_untamed"]
+        }
+      },
+      "cb:duck_on_tame": {
+        "remove": {
+          "component_groups": ["cb:duck_untamed"]
+        },
+        "add": {
+          "component_groups": ["cb:duck_tamed"]
+        }
+      }
+    }
+  }
+}

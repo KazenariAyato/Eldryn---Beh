@@ -1,0 +1,42 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "cb:horshoe_crab",
+      "population_control": "animal"
+    },
+
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+        "minecraft:brightness_filter": {
+          "min": 7,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:difficulty_filter": {
+          "min": "peaceful",
+          "max": "hard"
+        },
+        "minecraft:biome_filter": {
+          "any_of": [
+            { "test": "has_biome_tag", "operator": "==", "value": "beach" },
+            { "test": "has_biome_tag", "operator": "==", "value": "ocean" }
+          ]
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 4
+        },
+        "minecraft:spawns_on_block_filter": [
+          "minecraft:sand",
+          "minecraft:gravel"
+        ],
+        "minecraft:weight": {
+          "default": 8
+        }
+      }
+    ]
+  }
+}

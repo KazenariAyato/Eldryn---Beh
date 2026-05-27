@@ -1,0 +1,349 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "cb:minotaur",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:brightness_filter": {
+          "min": 0.0,
+          "max": 7.0,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 40
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:density_limit": {
+          "surface": 8,
+          "underground": 8
+        },
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "basalt_deltas"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "desert"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "desert_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "desert_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mega_taiga"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mega_taiga_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mesa_bryce"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mesa_plateau"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mesa_plateau_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mesa_plateau_stone"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mesa_plateau_stone_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mooshroom_island"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mushroom_island"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mushroom_island_shore"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "nether"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "netherwart_forest"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "nether_wastes"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "redwood_taiga_hills_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "redwood_taiga_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "savanna_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "savanna_plateau"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "savanna_plateau_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "stone_beach"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "swampswampland"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "swampland_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "taiga"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "taiga_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "taiga_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "warped_forestwarped_forest"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "minecraft:brightness_filter": {
+          "min": 1,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 40
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:density_limit": {
+          "surface": 8,
+          "underground": 8
+        },
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "basalt_deltas"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "desert"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "desert_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "desert_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mega_taiga"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mega_taiga_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mesa_bryce"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mesa_plateau"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mesa_plateau_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mesa_plateau_stone"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mesa_plateau_stone_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mooshroom_island"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mushroom_island"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mushroom_island_shore"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "nether"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "netherwart_forest"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "nether_wastes"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "redwood_taiga_hills_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "redwood_taiga_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "savanna_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "savanna_plateau"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "savanna_plateau_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "stone_beach"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "swampswampland"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "swampland_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "taiga"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "taiga_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "taiga_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "warped_forestwarped_forest"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

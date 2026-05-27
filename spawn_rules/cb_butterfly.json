@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "cb:butterfly",
+      "population_control": "animal"
+    },
+
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underground": {},
+        "minecraft:brightness_filter": {
+          "min": 10,
+          "max": 15,
+          "adjust_for_weather": true
+        },
+
+        "minecraft:weight": {
+          "default": 12
+        },
+
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 3
+        },
+
+        "minecraft:biome_filter": {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "forest"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "cb:direwolf",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:brightness_filter": {
+          "min": 0.0,
+          "max": 15.0,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 80
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:density_limit": {
+          "surface": 8,
+          "underground": 8
+        },
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "birch"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "cold_taiga"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "cold_taiga_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "cold_taiga_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "forest"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "forest_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jungle"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jungle_edge"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jungle_edge_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jungle_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jungle_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mega_taiga_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "redwood_taiga_hills_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "redwood_taiga_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "roofed_forest"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "roofed_forest_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "snowy_slopes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "minecraft:brightness_filter": {
+          "min": 1,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 80
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:density_limit": {
+          "surface": 8,
+          "underground": 8
+        },
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "birch"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "cold_taiga"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "cold_taiga_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "cold_taiga_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "forest"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "forest_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jungle"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jungle_edge"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jungle_edge_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jungle_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "jungle_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "mega_taiga_hills"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "redwood_taiga_hills_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "redwood_taiga_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "roofed_forest"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "roofed_forest_mutated"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "snowy_slopes"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

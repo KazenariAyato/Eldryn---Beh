@@ -1,0 +1,1819 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "minecraft:player",
+            "spawn_category": "creature",
+            "is_spawnable": false,
+            "is_summonable": false
+        },
+        "component_groups": {
+            "minecraft:add_raid_omen": {
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "raid_omen",
+                            "duration": 30,
+                            "display_on_screen_animation": true
+                        }
+                    ],
+                    "remove_effects": "bad_omen"
+                },
+                "minecraft:timer": {
+                    "time": [
+                        0.0,
+                        0.0
+                    ],
+                    "looping": false,
+                    "time_down_event": {
+                        "event": "minecraft:clear_add_raid_omen",
+                        "target": "self"
+                    }
+                }
+            },
+            "minecraft:clear_raid_omen_spell_effect": {
+                "minecraft:spell_effects": {}
+            },
+            "minecraft:raid_trigger": {
+                "minecraft:raid_trigger": {
+                    "triggered_event": {
+                        "event": "minecraft:remove_raid_trigger",
+                        "target": "self"
+                    }
+                }
+            },
+            "pamobile:respawn": {
+                "minecraft:mark_variant": {
+                    "value": 99999
+                },
+                "minecraft:movement": {
+                    "value": 0.1
+                }
+            },
+            "ammo:1": {
+                "minecraft:mark_variant": {
+                    "value": 1
+                }
+            },
+            "cb:tentacle_sword": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:red_orb": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "health_boost",
+                            "duration": 60000,
+                            "amplifier": 4,
+                            "display_on_screen_animation": false
+                        }
+                    ]
+                }
+            },
+            "cb:kraken_scale_chestplate": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "water_breathing",
+                            "duration": 60000,
+                            "amplifier": 1,
+                            "display_on_screen_animation": false
+                        }
+                    ]
+                }
+            },
+            "cb:kraken_scale_helmet": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:kraken_scales_boots": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:kraken_scale_leggings": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:main_dark_staff": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:chestplate_of_heavens": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "regeneration",
+                            "duration": 60000,
+                            "amplifier": 1,
+                            "display_on_screen_animation": false
+                        }
+                    ]
+                }
+            },
+            "cb:frost_viole": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:frost_dagger": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:yeti_fur_helmet": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "absorption",
+                            "duration": 60000,
+                            "amplifier": 1,
+                            "display_on_screen_animation": false
+                        }
+                    ]
+                }
+            },
+            "cb:yeti_fur_boots": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "absorption",
+                            "duration": 60000,
+                            "amplifier": 1,
+                            "display_on_screen_animation": false
+                        }
+                    ]
+                }
+            },
+            "cb:yeti_fur_chestplate": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "absorption",
+                            "duration": 60000,
+                            "amplifier": 1,
+                            "display_on_screen_animation": false
+                        }
+                    ]
+                }
+            },
+            "cb:pheonix_wings": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "fire_resistance",
+                            "duration": 60000,
+                            "amplifier": 1,
+                            "display_on_screen_animation": false
+                        }
+                    ]
+                }
+            },
+            "cb:yeti_fur_leggings": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "absorption",
+                            "duration": 60000,
+                            "amplifier": 1,
+                            "display_on_screen_animation": false
+                        }
+                    ]
+                }
+            },
+            "cb:pheonix_blade": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:krakens_fang": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:kitsune_claws": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:xp_viole_6": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:pheonix_blade_skin_dvsb": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:crimson_viole": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:wooden_bat": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:kitsune_tails": {
+                "minecraft:movement": {
+                    "value": 0.3
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:iron_spiked_bat": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:centaur_axe": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:iron_hooved_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_yeti_fur_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_vibranium_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_steel_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_silver_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_adamantium_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_copper_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_chainmai_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_kraken_scales_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_diamond_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_gold_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_leather_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:hooved_netherite_boots": {
+                "minecraft:movement": {
+                    "value": 0.2
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:vampiric_viole": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:vampiric_greatsword": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": [
+                        {
+                            "effect": "slowness",
+                            "duration": 60000,
+                            "amplifier": 2,
+                            "display_on_screen_animation": false
+                        }
+                    ]
+                }
+            },
+            "cb:toxic_viole": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            },
+            "cb:toxic_spear": {
+                "minecraft:movement": {
+                    "value": 0.1
+                },
+                "minecraft:spell_effects": {
+                    "add_effects": []
+                }
+            }
+        },
+        "components": {
+            "minecraft:health": {
+                "value": 20,
+                "max": 20
+            },
+            "minecraft:experience_reward": {
+                "on_death": "Math.Min(query.player_level * 7, 100)"
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "player"
+                ]
+            },
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:loot": {
+                "table": "loot_tables/empty.json"
+            },
+            "minecraft:collision_box": {
+                "width": 0.6,
+                "height": 1.8
+            },
+            "minecraft:can_climb": {},
+            "minecraft:movement": {
+                "value": 0.1
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:attack": {
+                "damage": 1
+            },
+            "minecraft:exhaustion_values": {
+                "heal": 6,
+                "jump": 0.05,
+                "sprint_jump": 0.2,
+                "mine": 0.005,
+                "attack": 0.1,
+                "damage": 0.1,
+                "walk": 0.0,
+                "sprint": 0.1,
+                "swim": 0.01
+            },
+            "minecraft:player.saturation": {
+                "value": 5,
+                "max": 20
+            },
+            "minecraft:player.exhaustion": {
+                "value": 0,
+                "max": 20
+            },
+            "minecraft:player.level": {
+                "value": 0,
+                "max": 24791
+            },
+            "minecraft:player.experience": {
+                "value": 0,
+                "max": 1
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": -1,
+                "inhale_time": 3.75,
+                "generates_bubbles": false
+            },
+            "minecraft:nameable": {
+                "always_show": true,
+                "allow_name_tag_renaming": false
+            },
+            "minecraft:physics": {
+                "push_towards_closest_space": true
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:insomnia": {
+                "days_until_insomnia": 3
+            },
+            "minecraft:rideable": {
+                "seat_count": 2,
+                "family_types": [
+                    "parrot_tame"
+                ],
+                "pull_in_entities": true,
+                "seats": [
+                    {
+                        "position": [
+                            0.4,
+                            -0.2,
+                            -0.1
+                        ],
+                        "min_rider_count": 0,
+                        "max_rider_count": 0,
+                        "lock_rider_rotation": 0
+                    },
+                    {
+                        "position": [
+                            -0.4,
+                            -0.2,
+                            -0.1
+                        ],
+                        "min_rider_count": 1,
+                        "max_rider_count": 2,
+                        "lock_rider_rotation": 0
+                    }
+                ]
+            },
+            "minecraft:conditional_bandwidth_optimization": {},
+            "minecraft:block_climber": {},
+            "minecraft:environment_sensor": {
+                "triggers": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_mob_effect",
+                                    "subject": "self",
+                                    "value": "bad_omen"
+                                },
+                                {
+                                    "test": "is_in_village",
+                                    "subject": "self",
+                                    "value": true
+                                }
+                            ]
+                        },
+                        "event": "minecraft:gain_raid_omen"
+                    },
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "test": "is_family",
+                                    "subject": "self",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "event": "pamobile:refresh_player"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:tentacle_sword"
+                                }
+                            ]
+                        },
+                        "event": "cb:tentacle_sword_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:red_orb"
+                                }
+                            ]
+                        },
+                        "event": "cb:red_orb_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:xp_viole"
+                                }
+                            ]
+                        },
+                        "event": "cb:xp_viole_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:summon_spirit_upgrade"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "self",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "event": "ammo:1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:xp_viole_1"
+                                }
+                            ]
+                        },
+                        "event": "cb:xp_viole_1_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:xp_viole_2"
+                                }
+                            ]
+                        },
+                        "event": "cb:xp_viole_2_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:xp_viole_3"
+                                }
+                            ]
+                        },
+                        "event": "cb:xp_viole_3_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:xp_viole_4"
+                                }
+                            ]
+                        },
+                        "event": "cb:xp_viole_4_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:xp_viole_5"
+                                }
+                            ]
+                        },
+                        "event": "cb:xp_viole_5_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:kraken_scale_chestplate"
+                                }
+                            ]
+                        },
+                        "event": "cb:kraken_scale_chestplate_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:kraken_scale_helmet"
+                                }
+                            ]
+                        },
+                        "event": "cb:kraken_scale_helmet_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:kraken_scales_boots"
+                                }
+                            ]
+                        },
+                        "event": "cb:kraken_scales_boots_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:kraken_scale_leggings"
+                                }
+                            ]
+                        },
+                        "event": "cb:kraken_scale_leggings_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:main_dark_staff"
+                                }
+                            ]
+                        },
+                        "event": "cb:main_dark_staff_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:chestplate_of_heavens"
+                                }
+                            ]
+                        },
+                        "event": "cb:chestplate_of_heavens_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:frost_viole"
+                                }
+                            ]
+                        },
+                        "event": "cb:frost_viole_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:frost_dagger"
+                                }
+                            ]
+                        },
+                        "event": "cb:frost_dagger_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:yeti_fur_helmet"
+                                }
+                            ]
+                        },
+                        "event": "cb:yeti_fur_helmet_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:yeti_fur_boots"
+                                }
+                            ]
+                        },
+                        "event": "cb:yeti_fur_boots_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:yeti_fur_chestplate"
+                                }
+                            ]
+                        },
+                        "event": "cb:yeti_fur_chestplate_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:pheonix_wings"
+                                }
+                            ]
+                        },
+                        "event": "cb:pheonix_wings_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:yeti_fur_leggings"
+                                }
+                            ]
+                        },
+                        "event": "cb:yeti_fur_leggings_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:pheonix_blade"
+                                }
+                            ]
+                        },
+                        "event": "cb:pheonix_blade_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:krakens_fang"
+                                }
+                            ]
+                        },
+                        "event": "cb:krakens_fang_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:kitsune_claws"
+                                }
+                            ]
+                        },
+                        "event": "cb:kitsune_claws_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:xp_viole_6"
+                                }
+                            ]
+                        },
+                        "event": "cb:xp_viole_6_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:pheonix_blade_skin_dvsb"
+                                }
+                            ]
+                        },
+                        "event": "cb:pheonix_blade_skin_dvsb_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:crimson_viole"
+                                }
+                            ]
+                        },
+                        "event": "cb:crimson_viole_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:wooden_bat"
+                                }
+                            ]
+                        },
+                        "event": "cb:wooden_bat_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:kitsune_tails"
+                                }
+                            ]
+                        },
+                        "event": "cb:kitsune_tails_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:iron_spiked_bat"
+                                }
+                            ]
+                        },
+                        "event": "cb:iron_spiked_bat_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:centaur_axe"
+                                }
+                            ]
+                        },
+                        "event": "cb:centaur_axe_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:iron_hooved_boots"
+                                }
+                            ]
+                        },
+                        "event": "cb:iron_hooved_boots_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:hooved_yeti_fur_boots"
+                                }
+                            ]
+                        },
+                        "event": "cb:hooved_yeti_fur_boots_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:hooved_chainmai_boots"
+                                }
+                            ]
+                        },
+                        "event": "cb:hooved_chainmai_boots_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:hooved_kraken_scales_boots"
+                                }
+                            ]
+                        },
+                        "event": "cb:hooved_kraken_scales_boots_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:hooved_diamond_boots"
+                                }
+                            ]
+                        },
+                        "event": "cb:hooved_diamond_boots_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:hooved_gold_boots"
+                                }
+                            ]
+                        },
+                        "event": "cb:hooved_gold_boots_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:hooved_leather_boots"
+                                }
+                            ]
+                        },
+                        "event": "cb:hooved_leather_boots_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "armor",
+                                    "value": "cb:hooved_netherite_boots"
+                                }
+                            ]
+                        },
+                        "event": "cb:hooved_netherite_boots_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:vampiric_viole"
+                                }
+                            ]
+                        },
+                        "event": "cb:vampiric_viole_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:vampiric_greatsword"
+                                }
+                            ]
+                        },
+                        "event": "cb:vampiric_greatsword_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:toxic_viole"
+                                }
+                            ]
+                        },
+                        "event": "cb:toxic_viole_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:toxic_spear"
+                                }
+                            ]
+                        },
+                        "event": "cb:toxic_spear_event"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:webshooter"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "self",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "event": "ammo:1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:archanoweave"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "self",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "event": "ammo:1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:frost_staff"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "self",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "event": "ammo:1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:dark_staff_1"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "self",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "event": "ammo:1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:staff_of_crimson_flames"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "self",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "event": "ammo:1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:dark_staff_2"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "self",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "event": "ammo:1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:staff_of_azure_flames"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "self",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "event": "ammo:1"
+                    },
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_equipment",
+                                    "subject": "self",
+                                    "domain": "hand",
+                                    "value": "cb:kraken_poison_shooter"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "self",
+                                    "value": "player"
+                                }
+                            ]
+                        },
+                        "event": "ammo:1"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "minecraft:gain_raid_omen": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:add_raid_omen"
+                    ]
+                }
+            },
+            "minecraft:clear_add_raid_omen": {
+                "remove": {
+                    "component_groups": [
+                        "minecraft:add_raid_omen"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "minecraft:clear_raid_omen_spell_effect"
+                    ]
+                }
+            },
+            "minecraft:trigger_raid": {
+                "add": {
+                    "component_groups": [
+                        "minecraft:raid_trigger"
+                    ]
+                }
+            },
+            "minecraft:remove_raid_trigger": {
+                "remove": {
+                    "component_groups": [
+                        "minecraft:raid_trigger"
+                    ]
+                }
+            },
+            "pamobile:refresh_player": {
+                "add": {
+                    "component_groups": [
+                        "pamobile:respawn"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "cb:tentacle_sword",
+                        "cb:red_orb",
+                        "cb:xp_viole",
+                        "cb:xp_viole_1",
+                        "cb:xp_viole_2",
+                        "cb:xp_viole_3",
+                        "cb:xp_viole_4",
+                        "cb:xp_viole_5",
+                        "cb:kraken_scale_chestplate",
+                        "cb:kraken_scale_helmet",
+                        "cb:kraken_scales_boots",
+                        "cb:kraken_scale_leggings",
+                        "cb:main_dark_staff",
+                        "cb:chestplate_of_heavens",
+                        "cb:frost_viole",
+                        "cb:frost_dagger",
+                        "cb:yeti_fur_helmet",
+                        "cb:yeti_fur_boots",
+                        "cb:yeti_fur_chestplate",
+                        "cb:pheonix_wings",
+                        "cb:yeti_fur_leggings",
+                        "cb:pheonix_blade",
+                        "cb:krakens_fang",
+                        "cb:kitsune_claws",
+                        "cb:xp_viole_6",
+                        "cb:pheonix_blade_skin_dvsb",
+                        "cb:crimson_viole",
+                        "cb:wooden_bat",
+                        "cb:kitsune_tails",
+                        "cb:iron_spiked_bat",
+                        "cb:centaur_axe",
+                        "cb:iron_hooved_boots",
+                        "cb:hooved_yeti_fur_boots",
+                        "cb:hooved_chainmai_boots",
+                        "cb:hooved_kraken_scales_boots",
+                        "cb:hooved_diamond_boots",
+                        "cb:hooved_gold_boots",
+                        "cb:hooved_leather_boots",
+                        "cb:hooved_netherite_boots",
+                        "cb:vampiric_viole",
+                        "cb:vampiric_greatsword",
+                        "cb:toxic_viole",
+                        "cb:toxic_spear"
+                    ]
+                }
+            },
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "pamobile:respawn"
+                    ]
+                },
+                "remove": {}
+            },
+            "ammo:1": {
+                "remove": {
+                    "component_groups": [
+                        "ammo:1"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "ammo:1"
+                    ]
+                }
+            },
+            "ammo:2": {
+                "remove": {
+                    "component_groups": [
+                        "ammo:2"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "ammo:2"
+                    ]
+                }
+            },
+            "cb:tentacle_sword_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:tentacle_sword"
+                    ]
+                }
+            },
+            "cb:red_orb_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:red_orb"
+                    ]
+                }
+            },
+            "cb:xp_viole_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:xp_viole"
+                    ]
+                }
+            },
+            "cb:summon_spirit_upgrade_fire": {
+                "add": {
+                    "component_groups": [
+                        "cb:summon_spirit_upgrade_fire"
+                    ]
+                }
+            },
+            "cb:xp_viole_1_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:xp_viole_1"
+                    ]
+                }
+            },
+            "cb:xp_viole_2_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:xp_viole_2"
+                    ]
+                }
+            },
+            "cb:xp_viole_3_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:xp_viole_3"
+                    ]
+                }
+            },
+            "cb:xp_viole_4_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:xp_viole_4"
+                    ]
+                }
+            },
+            "cb:xp_viole_5_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:xp_viole_5"
+                    ]
+                }
+            },
+            "cb:kraken_scale_chestplate_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:kraken_scale_chestplate"
+                    ]
+                }
+            },
+            "cb:kraken_scale_helmet_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:kraken_scale_helmet"
+                    ]
+                }
+            },
+            "cb:kraken_scales_boots_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:kraken_scales_boots"
+                    ]
+                }
+            },
+            "cb:kraken_scale_leggings_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:kraken_scale_leggings"
+                    ]
+                }
+            },
+            "cb:main_dark_staff_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:main_dark_staff"
+                    ]
+                }
+            },
+            "cb:chestplate_of_heavens_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:chestplate_of_heavens"
+                    ]
+                }
+            },
+            "cb:frost_viole_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:frost_viole"
+                    ]
+                }
+            },
+            "cb:frost_dagger_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:frost_dagger"
+                    ]
+                }
+            },
+            "cb:yeti_fur_helmet_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:yeti_fur_helmet"
+                    ]
+                }
+            },
+            "cb:yeti_fur_boots_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:yeti_fur_boots"
+                    ]
+                }
+            },
+            "cb:yeti_fur_chestplate_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:yeti_fur_chestplate"
+                    ]
+                }
+            },
+            "cb:pheonix_wings_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:pheonix_wings"
+                    ]
+                }
+            },
+            "cb:yeti_fur_leggings_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:yeti_fur_leggings"
+                    ]
+                }
+            },
+            "cb:pheonix_blade_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:pheonix_blade"
+                    ]
+                }
+            },
+            "cb:krakens_fang_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:krakens_fang"
+                    ]
+                }
+            },
+            "cb:kitsune_claws_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:kitsune_claws"
+                    ]
+                }
+            },
+            "cb:xp_viole_6_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:xp_viole_6"
+                    ]
+                }
+            },
+            "cb:pheonix_blade_skin_dvsb_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:pheonix_blade_skin_dvsb"
+                    ]
+                }
+            },
+            "cb:crimson_viole_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:crimson_viole"
+                    ]
+                }
+            },
+            "cb:wooden_bat_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:wooden_bat"
+                    ]
+                }
+            },
+            "cb:kitsune_tails_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:kitsune_tails"
+                    ]
+                }
+            },
+            "cb:iron_spiked_bat_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:iron_spiked_bat"
+                    ]
+                }
+            },
+            "cb:centaur_axe_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:centaur_axe"
+                    ]
+                }
+            },
+            "cb:iron_hooved_boots_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:iron_hooved_boots"
+                    ]
+                }
+            },
+            "cb:hooved_yeti_fur_boots_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:hooved_yeti_fur_boots"
+                    ]
+                }
+            },
+            "cb:hooved_chainmai_boots_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:hooved_chainmai_boots"
+                    ]
+                }
+            },
+            "cb:hooved_kraken_scales_boots_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:hooved_kraken_scales_boots"
+                    ]
+                }
+            },
+            "cb:hooved_diamond_boots_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:hooved_diamond_boots"
+                    ]
+                }
+            },
+            "cb:hooved_gold_boots_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:hooved_gold_boots"
+                    ]
+                }
+            },
+            "cb:hooved_leather_boots_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:hooved_leather_boots"
+                    ]
+                }
+            },
+            "cb:hooved_netherite_boots_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:hooved_netherite_boots"
+                    ]
+                }
+            },
+            "cb:vampiric_viole_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:vampiric_viole"
+                    ]
+                }
+            },
+            "cb:vampiric_greatsword_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:vampiric_greatsword"
+                    ]
+                }
+            },
+            "cb:toxic_viole_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:toxic_viole"
+                    ]
+                }
+            },
+            "cb:toxic_spear_event": {
+                "add": {
+                    "component_groups": [
+                        "cb:toxic_spear"
+                    ]
+                }
+            },
+            "cb:webshooter_fire": {
+                "add": {
+                    "component_groups": [
+                        "cb:webshooter_fire"
+                    ]
+                }
+            },
+            "cb:archanoweave_fire": {
+                "add": {
+                    "component_groups": [
+                        "cb:archanoweave_fire"
+                    ]
+                }
+            },
+            "cb:frost_staff_fire": {
+                "add": {
+                    "component_groups": [
+                        "cb:frost_staff_fire"
+                    ]
+                }
+            },
+            "cb:dark_staff_1_fire": {
+                "add": {
+                    "component_groups": [
+                        "cb:dark_staff_1_fire"
+                    ]
+                }
+            },
+            "cb:staff_of_crimson_flames_fire": {
+                "add": {
+                    "component_groups": [
+                        "cb:staff_of_crimson_flames_fire"
+                    ]
+                }
+            },
+            "cb:dark_staff_2_fire": {
+                "add": {
+                    "component_groups": [
+                        "cb:dark_staff_2_fire"
+                    ]
+                }
+            },
+            "cb:staff_of_azure_flames_fire": {
+                "add": {
+                    "component_groups": [
+                        "cb:staff_of_azure_flames_fire"
+                    ]
+                }
+            },
+            "cb:kraken_poison_shooter_fire": {
+                "add": {
+                    "component_groups": [
+                        "cb:kraken_poison_shooter_fire"
+                    ]
+                }
+            }
+        }
+    }
+}

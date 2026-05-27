@@ -1,0 +1,195 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cb:pheonix",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 11000 : 0"
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:health": {
+        "value": 350,
+        "max": 350
+      },
+      "minecraft:collision_box": {
+        "height": 1.0,
+        "width": 0.5
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:navigation.float": {
+        "can_path_over_water": true
+      },
+      "minecraft:behavior.float_wander": {
+        "must_reach": true,
+        "random_reselect": true,
+        "priority": 2,
+        "float_duration": [
+          0.1,
+          0.35
+        ]
+      },
+      "minecraft:shooter": {
+        "def": "minecraft:small_fireball"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "mob",
+          "undead"
+        ]
+      },
+      "minecraft:damage_sensor": [
+        {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      ],
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:follow_range": {
+        "value": 100,
+        "max": 105
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 9
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 3,
+        "look_distance": 3,
+        "probability": 0.1
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 2,
+        "charge_charged_trigger": 0.1,
+        "charge_shoot_trigger": 0.1,
+        "attack_radius": 100,
+        "burst_shots": 100,
+        "burst_interval": 0.1,
+        "attack_interval_max": 1000
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "must_see": true,
+            "max_dist": 8.0
+          }
+        ],
+        "must_see": true,
+        "priority": 3,
+        "within_radius": 125,
+        "must_reach": true
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.02
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_contact_with_water",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "drowning",
+            "damage_per_tick": 1
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 7
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "speed_multiplier": 1,
+        "random_stop_interval": 100,
+        "track_target": true,
+        "reach_multiplier": 1.4
+      },
+      "minecraft:behavior.owner_hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.owner_hurt_target": {
+        "priority": 2
+      },
+      "minecraft:navigation.fly": {
+        "avoid_damage_blocks": true,
+        "avoid_portals": true,
+        "avoid_sun": false,
+        "avoid_water": false,
+        "can_breach": false,
+        "can_break_doors": false,
+        "can_jump": true,
+        "can_open_doors": false,
+        "can_open_iron_doors": false,
+        "can_pass_doors": true,
+        "can_path_from_air": true,
+        "can_path_over_lava": true,
+        "can_path_over_water": true,
+        "can_sink": true,
+        "can_swim": false,
+        "can_walk": true,
+        "can_walk_in_lava": true,
+        "is_amphibious": false
+      },
+      "minecraft:boss": {
+        "should_darken_sky": true,
+        "hud_range": 250,
+        "name": "Pheonix"
+      },
+      "minecraft:fall_damage": {
+        "value": 0
+      },
+      "minecraft:lookat": {
+        "allow_invulnerable": false,
+        "filters": {
+          "test": "has_target"
+        },
+        "search_radius": 250.0,
+        "set_target": true
+      },
+      "minecraft:physics": {
+        "has_gravity": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 0.0,
+        "max": 0.0
+      },
+      "minecraft:flying_speed": {
+        "value": 0.02
+      },
+      "minecraft:movement.basic": {
+        "max_turn": 30.0
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/cb_pheonix.json"
+      }
+    },
+    "events": null
+  }
+}

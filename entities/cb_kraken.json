@@ -1,0 +1,207 @@
+{
+  "format_version": "1.18.10",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "cb:kraken",
+      "spawn_category": "water_creature",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:squid_baby": {
+        "minecraft:scale": {
+          "value": 0.5
+        }
+      }
+    },
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 9000 : 0"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "aquatic",
+          "monster",
+          "mob"
+        ]
+      },
+      "minecraft:collision_box": {
+        "height": 3,
+        "width": 3
+      },
+      "minecraft:health": {
+        "value": 300,
+        "max": 300
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:balloonable": {
+        "mass": 0.5,
+        "on_balloon": {},
+        "on_unballoon": {}
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.3
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:breathable": {
+        "breathesWater": true,
+        "totalSupply": 20,
+        "suffocateTime": -1,
+        "generatesBubbles": true,
+        "breathesAir": true,
+        "breathe_blocks": [],
+        "non_breathe_blocks": [],
+        "breathes_water": true,
+        "breathes_lava": true,
+        "breathes_air": true
+      },
+      "minecraft:attack": {
+        "damage": 9,
+        "effect_name": "poison",
+        "effect_duration": 30
+      },
+      "minecraft:behavior.ranged_attack": {
+        "attack_interval_min": 1,
+        "attack_interval_max": 3,
+        "attack_radius": 100,
+        "burst_shots": 1,
+        "burst_interval": 0.5
+      },
+      "minecraft:shooter": {
+        "def": "cb:kraken_poison_shooter_bullet",
+        "projectiles": []
+      },
+      "minecraft:boss": {
+        "should_darken_sky": false,
+        "hud_range": 250,
+        "name": "Kraken"
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "speed_multiplier": 3,
+        "random_stop_interval": 100,
+        "track_target": true,
+        "reach_multiplier": 1.4,
+        "on_attack": {},
+        "on_kill": {}
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "within_radius": 35,
+        "must_reach": false,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "max_dist": 35,
+            "must_see": false
+          }
+        ],
+        "must_see": false
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3,
+        "entity_types": []
+      },
+      "minecraft:behavior.owner_hurt_by_target": {
+        "priority": 1,
+        "entity_types": []
+      },
+      "minecraft:behavior.owner_hurt_target": {
+        "priority": 2,
+        "entity_types": []
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      },
+      "minecraft:movement.basic": {
+        "max_turn": 30
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/cb_kraken.json"
+      },
+      "minecraft:behavior.random_swim": {
+        "avoid_surface": true,
+        "interval": 120,
+        "speed_multiplier": 1,
+        "xz_dist": 20,
+        "y_dist": 7,
+        "priority": 8
+      },
+      "minecraft:navigation.walk": {
+        "can_breach": false,
+        "can_break_doors": false,
+        "can_jump": true,
+        "can_open_doors": false,
+        "can_open_iron_doors": false,
+        "avoid_water": false,
+        "avoid_damage_blocks": false,
+        "avoid_portals": false,
+        "avoid_sun": false,
+        "can_pass_doors": false,
+        "can_path_from_air": false,
+        "can_path_over_lava": false,
+        "can_path_over_water": false,
+        "can_sink": false,
+        "can_swim": true,
+        "can_walk": true,
+        "can_walk_in_lava": false,
+        "is_amphibious": false
+      },
+      "minecraft:behavior.swim_wander": {
+        "interval": 0.1,
+        "look_ahead": 5,
+        "speed_multiplier": 1,
+        "wander_time": 5,
+        "priority": 8
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 95
+          },
+          {
+            "weight": 5,
+            "add": {
+              "component_groups": [
+                "minecraft:squid_baby"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

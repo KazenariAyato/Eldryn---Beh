@@ -1,0 +1,149 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "cb:frost_elf_archer",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+        "minecraft:brightness_filter": {
+          "min": 0.0,
+          "max": 15.0,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 80
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:density_limit": {
+          "surface": 8,
+          "underground": 8
+        },
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "frozen_ocean"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "frozen_peaks"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "frozen_river"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ice"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ice_mountains"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ice_plains"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ice_plains_spikes"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "legacy_frozen_ocean"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "snowy_slopes"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "minecraft:brightness_filter": {
+          "min": 1,
+          "max": 15,
+          "adjust_for_weather": false
+        },
+        "minecraft:weight": {
+          "default": 80
+        },
+        "minecraft:herd": {
+          "min_size": 1,
+          "max_size": 1
+        },
+        "minecraft:density_limit": {
+          "surface": 8,
+          "underground": 8
+        },
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "frozen_ocean"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "frozen_peaks"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "frozen_river"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ice"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ice_mountains"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ice_plains"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "ice_plains_spikes"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "legacy_frozen_ocean"
+              },
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "snowy_slopes"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
