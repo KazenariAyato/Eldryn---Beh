@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipes_2896953a"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "ABA",
+      "AAA"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:vampire_blood",
+        "data": 0
+      },
+      "B": {
+        "item": "cb:vampire_heart",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:vampiric_viole",
+      "count": 1
+    }
+  }
+}

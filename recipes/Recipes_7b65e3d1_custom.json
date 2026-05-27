@@ -1,0 +1,19 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "tags": [
+      "furnace"
+    ],
+    "output": {
+      "item": "cb:cooked_minotaur_meat",
+      "data": 0
+    },
+    "input": {
+      "item": "cb:raw_minotaur_meat",
+      "data": 0
+    },
+    "description": {
+      "identifier": "recipes_8bb4b330"
+    }
+  }
+}

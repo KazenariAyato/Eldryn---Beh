@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "yeti_fur_helmet_ce7a1fdb"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "AAA",
+      "ABA"
+    ],
+    "key": {
+      "A": {
+        "item": "cb:yeti_fur",
+        "data": 0
+      },
+      "B": {
+        "item": "minecraft:diamond_helmet",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:yeti_fur_helmet",
+      "count": 1
+    }
+  }
+}

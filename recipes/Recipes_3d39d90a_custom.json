@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "recipes_88c940b4"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "BC"
+    ],
+    "key": {
+      "B": {
+        "item": "cb:main_dark_staff",
+        "data": 0
+      },
+      "C": {
+        "item": "cb:crimson_viole",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "cb:staff_of_azure_flames",
+      "count": 1
+    }
+  }
+}
