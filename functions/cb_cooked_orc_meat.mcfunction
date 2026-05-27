@@ -1,0 +1,1 @@
+give @s cb:cooked_orc_meat

@@ -1,0 +1,1 @@
+summon cb:kitsune_beastform

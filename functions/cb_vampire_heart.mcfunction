@@ -1,0 +1,1 @@
+give @s cb:vampire_heart

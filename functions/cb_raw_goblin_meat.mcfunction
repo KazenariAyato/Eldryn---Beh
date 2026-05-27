@@ -1,0 +1,1 @@
+give @s cb:raw_goblin_meat

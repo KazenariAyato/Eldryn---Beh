@@ -1,0 +1,1 @@
+give @s cb:cooked_minotaur_meat
